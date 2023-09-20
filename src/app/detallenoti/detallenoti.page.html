@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalle noticia</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <ion-item lines="none" >
+      <h2>{{title}}</h2>    
+    </ion-item>
+  </ion-card>
+
+  <ion-card >
+    <ion-card >
+      <img alt="imagen Pelicula" src="{{url_imag}}" class="img">
+    </ion-card>
+
+  
+    <ion-card-content>
+      Fecha: {{date}} <br>
+    </ion-card-content>
+    <ion-footer >
+      <ion-toolbar class="ion-text-justify" style="padding: 10px;" >
+        {{text_long}}
+      </ion-toolbar>
+
+
+
+    </ion-footer>
+  </ion-card>
+
+</ion-content>
+
+
